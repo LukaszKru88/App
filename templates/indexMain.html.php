@@ -1,3 +1,9 @@
+<?php
+if(isset($_SESSION['is_logged'])){
+	header("Location: templates/mainMenu.html.php");
+}
+?>
+
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
@@ -10,8 +16,8 @@
 		<meta name="author" content="ŁK">
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="templates/css/bootstrap.min.css">
+		<link rel="stylesheet" href="templates/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"> 
 		<script src = "js/jquery.js"></script>
 		
@@ -72,6 +78,7 @@
 					<main>
 						<a href="?task=login&action=index"><button type="button" class="login btn btn-warning">Zaloguj się</button></a>
 						<a href="?task=register&action=index"><button type="button" class="register btn btn-warning">Zarejestruj się</button></a>
+						<?php include("classes/sessionMessage.php") ?>	
 					</main>
 				</div>
 			</div>

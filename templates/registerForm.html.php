@@ -11,8 +11,8 @@
 		<meta name="author" content="ŁK">
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="templates/css/bootstrap.min.css">
+		<link rel="stylesheet" href="templates/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"> 
 		<script src = "js/jquery.js"></script>
 		
@@ -26,9 +26,7 @@
 		<div class = "container">
 			<header>
 				<div class="row">
-					<?php include("sessionMessage.php") ?>	
-
-					<div class="col-md-12">
+						<div class="col-md-12">
 						<h1 class="logo">Aplikacja Budżetowa</h1>
 					</div>
 				</div>
@@ -54,7 +52,7 @@
 			<div class="row">
 				<div class="col-md-6 offset-md-3">
 					<main>
-						<form method = "post" action = "registerLogic.php">
+						<form method = "post" action="?task=register&action=register">
 						  <div  id="namebox" class="form-group">
 							<input type="text" name="nick" class="form-control" id="formGroupExampleInput" placeholder="login">
 						  </div>
@@ -105,6 +103,7 @@
 							<div class="col-md-6 offset-md-3 text-center"> 
 								<button id="registerButton" name="singlebutton" class="btn btn-warning">Zarejestruj się</button> 
 							</div>
+							<?php include("classes/sessionMessage.php") ?>	
 						</form>
 					</main>
 				</div>

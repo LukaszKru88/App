@@ -11,6 +11,10 @@ class LoginController extends Controller{
 	public function login(){
 		$model = $this->loadModel('login');
 		$model->loginAttempt();
-		$this->redirect('templates/mainMenu.html.php');
+		if(!isset($_SESSION['is_logged'])){
+			$this->redirect('index.php?task=login&action=index');
+		}
+		else
+			$this->redirect('index.php');
 	}
 }

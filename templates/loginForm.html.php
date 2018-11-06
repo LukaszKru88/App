@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
@@ -13,8 +10,8 @@ session_start();
 		<meta name="author" content="ŁK">
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 		
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="templates/css/bootstrap.min.css">
+		<link rel="stylesheet" href="templates/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"> 
 		<script src = "js/jquery.js"></script>
 		
@@ -42,7 +39,7 @@ session_start();
 				<div class="collapse navbar-collapse justify-content-center menu"  id="navigationMenu">
 					<ul class="menu nav justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link" href="../index.php">Strona Główna</a>
+							<a class="nav-link" href="index.php">Strona Główna</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="?task=register&action=index">Rejestracja</a>
@@ -63,9 +60,9 @@ session_start();
 						  </div>
 						  
 							<div class="col-md-6 offset-md-3 text-center"> 
-								<button id="logButton" name="singlebutton" class="btn btn-warning">Zaloguj się</button>
-								<?php include("classes/sessionMessage.php") ?>		
+								<button id="logButton" name="singlebutton" class="btn btn-warning">Zaloguj się</button>	
 							</div>
+							<?php include("classes/sessionMessage.php") ?>
 						</form>
 					</main>
 				</div>

@@ -1,21 +1,21 @@
 <?php
-session_start();
-
 include 'model/model.php';
 
 class LoginModel extends Model{
 
-	public function loginAttempt(){
+	public function loginAttempt()
+	{
 	    try{
 	        $credentials = $this->getCredentials();
 	        $this->checkUserCredentials($credentials);
-	        $this->dbo->close();
-	    } catch(exception $e){
+	        //$this->dbo->close();
+	    } catch(Exception $e){
 	    	$_SESSION['message'] = $e->getMessage();
 	    }
 	}
 
-	private function getCredentials(){
+	private function getCredentials()
+	{
 		if($_POST['login'] == "" && $_POST['password'] == "")
     		throw new exception('Fill the form to perform a login attempt.');
 		else {
@@ -51,14 +51,13 @@ class LoginModel extends Model{
 		if($result->num_rows <> 1)
 			throw new exception('Invalid user or password!');
 		else{
-			$row = $result->fetch_assoc();
+			$row = mysqli_fetch_assoc($result);
 
 			if(password_verify($password, $row['password'])){
 				$_SESSION['is_logged'] =  true;
 				$_SESSION['id'] =  $row['id'];
 				$_SESSION['username'] =  $row['username'];
 				$_SESSION['email'] = $row['email'];
-				$result->free_result();
 			}
 			else
 			    throw new exception('Invalid user or password!');

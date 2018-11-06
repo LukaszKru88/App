@@ -8,4 +8,15 @@ class RegisterController extends Controller{
 		$view->index();
 	}
 
+	public function register(){
+		$model = $this->loadModel('register');
+		$model->registerAttempt();
+
+		if(!isset($_SESSION['registration_approved'])){
+			unset($_SESSION['registration_approved']);
+			header("location: index.php?task=register&action=index");
+		}
+		else
+			$this->redirect('index.php');
+	}
 }

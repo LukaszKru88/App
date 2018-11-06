@@ -3,7 +3,7 @@
 class Controller{
 	
 	public function redirect($url){
-		header("location: ".$url);
+		header("Location: ".$url);
 	}
 
 	public function loadView($name, $path = 'view/'){

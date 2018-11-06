@@ -44,7 +44,6 @@ class Model{
         foreach ($select as $row) {
             $data[] = $row;
         }
-        $this->dbo->close();
 
         return $data;
     }
