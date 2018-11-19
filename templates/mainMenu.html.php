@@ -58,7 +58,7 @@ if(!isset($_SESSION['is_logged'])){
 							<a href = "?task=addExpense&action=index"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Dodaj wydatek</button></a>
 						</div>
 						<div class="col-md-12-6 text-center"> 
-							<a href = "balanceSheet.php"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Przeglądaj bilans</button></a>
+							<a href = "?task=showBalance&action=index"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Przeglądaj bilans</button></a>
 						</div>	
 						<div class="col-md-12-6 text-center"> 
 							<a href = "settings.php"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Ustawienia</button></a>

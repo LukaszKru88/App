@@ -23,7 +23,6 @@ $current_date = new DateTime();
 		<link rel="stylesheet" href="templates/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"> 
 		<script src = "js/jquery.js"></script>
-		<script type ="text/javascript" src = "js/clock.js"></script>
 		
 		<!--[if lt IE 9]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -41,19 +40,6 @@ $current_date = new DateTime();
 				</div>
 			</header>
 						
-			<div class="row">
-				<div class="col-md-12">
-					<nav class = "topnav">
-						<ul class="menu nav justify-content-center">
-							<li class="nav-link">
-							<?='<p>Witaj ' . $_SESSION['username'] . '!'; ?></li>
-							<li class="nav-link">Dodaj przychód</li>
-							<li class="nav-link" id="clock">12:00:00</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			
 			<nav class="navbar navbar-expand-sm navbar-light">
 				<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navigationMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -71,7 +57,7 @@ $current_date = new DateTime();
 							<a class="nav-link" href="?task=addExpense&action=index">Dodaj wydatek</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="balanceSheet.php">Przeglądaj bilans</a>
+							<a class="nav-link" href="?task=showBalance&action=index">Przeglądaj bilans</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Ustawienia</a>
@@ -88,32 +74,28 @@ $current_date = new DateTime();
 					<div class="row">
 						<div class="col-md-6 offset-md-3">
 							<div  id="amountbox" class="form-group">
-								<input type="number" step="0.01" name="amount"class="form-control" id="formGroupExampleInput" placeholder="kwota">
+								<input type="number" step="0.01" name="amount" class="form-control" id="formGroupExampleInput" placeholder="kwota" value="<?php if(isset($this->editIncome['amount'])) $this->printAmount();?>">
 							</div>								  
 							<div  id = "date" class="form-group">
-								<input class="form-control" name="date" type="date" value="<?php echo $current_date->format('Y-m-d')?>"/>
+								<input class="form-control" name="date" type="date" value="<?php if(isset($this->editIncome['date'])) echo $this->printDate(); else echo $current_date->format('Y-m-d')?>"/>
 							</div>									  
 							<div class="categories form-check">Wybierz kategorię
 								<ul class="justify-content-center">
 									<?php
-									$i=1; 
-									foreach($this->get('incomeCategories') as $category) 
-									{
-									    echo '<li><label class="form-check-label" for="exampleRadios' . $i . '"><input class="form-check-input" type="radio" name="category" id="exampleRadios' . $i . '"  value="' . $category['name'] . '"' . ($i == 1 ? "checked" : "") . '>' . $category['name'] . '</label></li>';
-									    $i++;
-									}
+									    $this->printIncomeCategories('incomeCategories');
 									?>
 								</ul>
 							</div>
 
 							<div id="commentbox" class="form-group">
-								<input type="text" name="comment"class="form-control" id="formGroupExampleInput2" placeholder="komentarz">
+								<input type="text" name="comment"class="form-control" id="formGroupExampleInput2" placeholder="komentarz" value="
+								    <?php if(isset($this->editIncome['comment'])) $this->printComment();?>">
 							</div>
 						</div>
 					</div>
 											
 					<div class="col-md-6 offset-md-3 text-center"> 
-						<button id="addButton" name="singlebutton" class="btn btn-warning">Dodaj</button> 
+						<button id="addButton" name="singlebutton" class="btn btn-warning">Dodaj</button>
 				</form>
 						<button id="cancelButton" name="cancel" class="btn btn-warning"><a href="index.php">Anuluj</a></button> 
 					</div>
@@ -122,9 +104,7 @@ $current_date = new DateTime();
 				
 			<footer>
 				<div class = "info">
-
 					Łukasz Kruszelnicki - Wszelkie prawa zastrzeżone &copy; 2018
-					
 				</div>
 			</footer>
 		</div>

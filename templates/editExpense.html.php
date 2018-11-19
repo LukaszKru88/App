@@ -69,26 +69,21 @@ $user_id = $_SESSION['id'];
 			</nav>
 			
 			<main>
-				<form method="post" action="?task=addExpense&action=addExpense">
+				<form method="post" action="?task=edit&action=editExpense&type=expenses">
 					<div class="row">
 						<div class="col-md-6 offset-md-3">
 							<div class = "mainmenu">
 								<div  id="amountbox" class="form-group">
-									<input type="number" step="0.01" name="amount"class="form-control" id="formGroupExampleInput" placeholder="kwota">
+									<input type="number" step="0.01" name="amount"class="form-control" id="formGroupExampleInput" placeholder="kwota" value="<?php if(isset($this->editExpense['amount'])) $this->printAmount();?>">
 								</div>	
 									  
 								<div  id = "date" class="form-group">
-									<input class="form-control" name="date"type="date" value="<?php $current_date = new DateTime; echo $current_date->format('Y-m-d')?>"/>
+									<input class="form-control" name="date"type="date" value="<?php if(isset($this->editExpense['date'])) echo $this->printDate(); else echo $current_date->format('Y-m-d')?>"/>
 								</div>						
 								<div class="categories form-check">Sposób płatności
 									<ul class="justify-content-center">
 									<?php
-									$i=1; 
-									foreach($this->get('paymentMethods') as $paymentMethod) 
-									{
-									    echo '<li><label class="form-check-label" for="exampleRadios' . $i . '"><input class="form-check-input" type="radio" name="payment_method" id="exampleRadios' . $i . '"  value="' . $paymentMethod['name'] . '"' . ($i == 1 ? "checked" : "") . '>' . $paymentMethod['name'] . '</label></li>';
-									    $i++;
-									}
+									$this->printPaymentMethods('paymentMethods');
 									?>							
 									</ul>
 								</div>
@@ -96,25 +91,21 @@ $user_id = $_SESSION['id'];
 								<div class="categories form-check">Kategorie
 									<ul class="justify-content-center">
 									<?php
-									$i=1; 
-									foreach($this->get('expenseCategories') as $category) 
-									{
-									    echo '<li><label class="form-check-label" for="exampleRadios' . $i . '"><input class="form-check-input" type="radio" name="category" id="exampleRadios' . $i . '"  value="' . $category['name'] . '"' . ($i == 1 ? "checked" : "") . '>' . $category['name'] . '</label></li>';
-									    $i++;
-									}
+									    $this->printExpenseCategories('expenseCategories');
 									?>
 									</ul>
 								</div>
 							</div>
 					
 							<div id="commentbox" class="form-group">
-								<input type="text" name="comment"class="form-control" id="formGroupExampleInput2" placeholder="komentarz">
+								<input type="text" name="comment"class="form-control" id="formGroupExampleInput2" placeholder="komentarz" value="
+								    <?php if(isset($this->editExpense['comment'])) $this->printComment();?>">
 							</div>
 						</div>
 					</div>
 												
 					<div class="col-md-6 offset-md-3 text-center"> 
-						<button id="addButton" name="singlebutton" class="btn btn-warning">Dodaj</button> 
+						<button id="addButton" name="singlebutton" class="btn btn-warning">Edytuj</button> 
 				</form>
 						<button id="cancelButton" name="cancel" class="btn btn-warning"><a href="index.php">Anuluj</a></button> 
 					</div>

@@ -3,7 +3,7 @@ body
 	background-color: #173e43;
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .btn a
@@ -112,7 +112,6 @@ h3
 	font-size: 15px;
 	margin-top: 5px;
 	border-radius: 5px;
-	color: #173e43;
 	line-height: 150%;
 	margin-bottom: 0;
 }
@@ -327,17 +326,11 @@ footer
 .categories > ul > li
 {
 	border-bottom: 1px dashed #0a2b42;
-	display: none;
+
 	letter-spacing: 1px;
 	font-size: 15px;
 	margin-left: -15px;
 	margin-right: 15px;
-}
-
-.categories:hover > ul > li
-{
-	display: block;
-	transition: all 0.5s;
 }
 
 .categories > ul > li:hover
@@ -427,7 +420,7 @@ footer
 	margin-right: 25px;
 	margin-left: 25px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 12px;
 	color: #173e43;
 	line-height: 160%;
 	border-radius: 5px;

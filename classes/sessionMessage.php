@@ -37,4 +37,15 @@
             
       unset($_SESSION['expense_approved']);
     }
+
+    if(isset($_SESSION['delete']))
+    {
+      $_SESSION['delete'] = "Usunięto wpis z bazy danych!";
+      
+      echo '<div class="approved">' . 
+            $_SESSION['delete'] . 
+            '</div>';
+            
+      unset($_SESSION['delete']);
+    }
 ?>

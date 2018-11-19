@@ -56,7 +56,8 @@ class addIncomeModel extends Model{
 				w innym terminie!');
 	}
 
-	public function getIncomeCategories() {
+	public function getIncomeCategories()
+	{
 		$user_id = $_SESSION['id'];
         return $this->select('incomes_category_assigned_to_users', '*', "user_id='$user_id'");
     }

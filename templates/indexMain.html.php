@@ -10,7 +10,7 @@ if(isset($_SESSION['is_logged'])){
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<title>Aplikacja budżetowa</title>
+		<title>Budget Controller</title>
 		<meta name="description" content="Aplikacja budżetowa dla każdego">
 		<meta name="keywords" content="Aplikacja, Budżetowa, oszczędzanie, pieniądze">
 		<meta name="author" content="ŁK">
@@ -24,7 +24,6 @@ if(isset($_SESSION['is_logged'])){
 		<!--[if lt IE 9]>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<![endif]-->
-		
 	</head>
 
 	<body>
@@ -32,7 +31,7 @@ if(isset($_SESSION['is_logged'])){
 			<header>
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="logo">Aplikacja Budżetowa</h1>
+						<h1 class="logo">Budget Controller</h1>
 					</div>
 				</div>
 			</header>
