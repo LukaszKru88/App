@@ -20,13 +20,13 @@ session_start();
 				$ob->$action();
 				break;
 			case 'addIncome':
-				include 'controller/addIncome.php';
+				include 'controller/income.php';
 				$ob = new IncomeController();
 				$action = $_GET['action'];
 				$ob->$action();
 				break;
 			case 'addExpense':
-				include 'controller/addExpense.php';
+				include 'controller/expense.php';
 				$ob = new ExpenseController();
 				$action = $_GET['action'];
 				$ob->$action();
@@ -46,16 +46,16 @@ session_start();
 			case 'edit':
 				if($_GET['type'] == 'incomes')
 				{
-					include 'controller/editIncome.php';
-					$ob = new EditIncomeController();
+					include 'controller/income.php';
+					$ob = new IncomeController();
 					$action = $_GET['action'];
 					$ob->$action();
 					break;
 				}
 				else if($_GET['type'] == 'expenses')
 				{
-					include 'controller/editExpense.php';
-					$ob = new EditExpenseController();
+					include 'controller/expense.php';
+					$ob = new ExpenseController();
 					$action = $_GET['action'];
 					$ob->$action();
 					break;

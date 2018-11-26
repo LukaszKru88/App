@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
 				"max-",
 				"max-width\tproperty"
 			],
@@ -96,21 +100,66 @@
 	"buffers":
 	[
 		{
-			"file": "templates/indexMain.html.php",
+			"file": "templates/css/main.css",
 			"settings":
 			{
-				"buffer_size": 3631,
+				"buffer_size": 8342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/balanceSheet.html.php",
+			"settings":
+			{
+				"buffer_size": 4657,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/css/main.css",
+			"file": "view/showBalance.php",
 			"settings":
 			{
-				"buffer_size": 9473,
+				"buffer_size": 1908,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/income.html.php",
+			"settings":
+			{
+				"buffer_size": 2649,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/balanceNavbar.html.php",
+			"settings":
+			{
+				"buffer_size": 4325,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/header.html.php",
+			"settings":
+			{
+				"buffer_size": 200,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "model/showBalance.php",
+			"settings":
+			{
+				"buffer_size": 5877,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -157,48 +206,90 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/aplikacja",
-		"/C/xampp/htdocs/aplikacja/templates",
-		"/C/xampp/htdocs/aplikacja/templates/css"
+		"/C/xampp/htdocs/aplikacja/model",
+		"/C/xampp/htdocs/aplikacja/view"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/aplikacja/templates/config.php",
+		"/C/xampp/htdocs/aplikacja/model/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/index.php",
+		"/C/xampp/htdocs/aplikacja/controller/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/view/view.php",
+		"/C/xampp/htdocs/aplikacja/controller/controller.php",
+		"/C/xampp/htdocs/aplikacja/view/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/templates/balanceNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/expense.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/mainNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/income.html.php",
+		"/C/xampp/htdocs/aplikacja/view/expense.php",
+		"/C/xampp/htdocs/aplikacja/controller/income.php",
+		"/C/xampp/htdocs/aplikacja/templates/indexMain.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/mainMenu.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/registerForm.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/formNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/loginForm.html.php",
+		"/C/Users/Qki/Desktop/WWW/BOOTSTRAP/main.css",
+		"/C/Users/Qki/Desktop/WWW/BOOTSTRAP/index.html",
+		"/C/xampp/htdocs/aplikacja2/templates/mainMenu.html.php",
+		"/C/xampp/htdocs/aplikacja/controller/login.php",
+		"/C/xampp/htdocs/aplikacja/model/login.php",
+		"/C/xampp/htdocs/aplikacja/templates/css/main.css",
+		"/C/xampp/htdocs/aplikacja/templates/head.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/footer.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/navbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/header.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/test.html.php",
+		"/C/xampp/htdocs/sticky/index.html",
+		"/C/xampp/htdocs/sticky/style.css",
+		"/C/Users/Qki/Downloads/76-Bootstrap-4-Menu-Starter-File/76 - Bootstrap 4 Menu Starter File/Bootstrap 4 Navigation Menu/index.html",
+		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.html.php",
+		"/C/xampp/htdocs/aplikacja2/templates/head.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/expense.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/balanceSheet.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/income.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/addIncome.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/indexMain.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/mainMenu.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/loginForm.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/logout.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/logout.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/registerForm.html.php",
+		"/C/xampp/htdocs/aplikacja/controller/addIncome.php",
+		"/C/xampp/htdocs/aplikacja/controller/editIncome.php",
+		"/C/xampp/htdocs/aplikacja2/index.php",
+		"/C/xampp/htdocs/aplikacja/view/editIncome.php",
+		"/C/xampp/htdocs/aplikacja/view/addIncome.php",
+		"/C/xampp/htdocs/aplikacja/controller/addExpense.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/head.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/addExpense.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/addExpense.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/editExpense.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/addIncome.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/header.html.php",
+		"/C/xampp/htdocs/aplikacja/nowe templatki/footer.html.php",
+		"/C/xampp/htdocs/aplikacja/model/addIncome.php",
+		"/C/xampp/htdocs/aplikacja/templates/editIncome.html.php",
+		"/C/xampp/htdocs/budget2/index.php",
+		"/C/xampp/htdocs/aplikacja/templates/demo.html",
+		"/C/xampp/htdocs/fonty/index.php",
+		"/C/xampp/htdocs/fonty/demo.html",
 		"/C/xampp/htdocs/aplikacja/fontello-1da5c0f5/fontello-1da5c0f5/demo.html",
 		"/C/xampp/htdocs/aplikacja/templates/css/fontello/fontello.css",
 		"/C/xampp/htdocs/aplikacja/controller/editExpense.php",
 		"/C/xampp/htdocs/aplikacja/model/editExpense.php",
 		"/C/xampp/htdocs/aplikacja/model/editIncome.php",
-		"/C/xampp/htdocs/aplikacja/view/editIncome.php",
-		"/C/xampp/htdocs/aplikacja/controller/editIncome.php",
-		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.html.php",
-		"/C/xampp/htdocs/aplikacja/index.php",
-		"/C/xampp/htdocs/aplikacja/templates/logout.php",
 		"/C/xampp/htdocs/aplikacja/model/addExpense.php",
-		"/C/xampp/htdocs/aplikacja/templates/editExpense.html.php",
-		"/C/xampp/htdocs/aplikacja/model/addIncome.php",
-		"/C/xampp/htdocs/aplikacja/templates/editIncome.html.php",
 		"/C/xampp/htdocs/aplikacja/view/editExpense.php",
-		"/C/xampp/htdocs/aplikacja/controller/addIncome.php",
 		"/C/xampp/htdocs/aplikacja/controller/editCashFlow.php",
-		"/C/xampp/htdocs/aplikacja/templates/addIncome.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/mainMenu.html.php",
-		"/C/xampp/htdocs/aplikacja/controller/showBalance.php",
-		"/C/xampp/htdocs/aplikacja/view/addIncome.php",
-		"/C/xampp/htdocs/aplikacja/templates/addExpense.html.php",
 		"/C/xampp/htdocs/aplikacja/view/addExpense.php",
-		"/C/xampp/htdocs/aplikacja/view/showBalance.php",
 		"/C/xampp/htdocs/aplikacja/controller/deleteCashFlow.php",
-		"/C/xampp/htdocs/aplikacja/model/showBalance.php",
 		"/C/xampp/htdocs/aplikacja/model/deleteCashFlow.php",
-		"/C/xampp/htdocs/aplikacja/controller/controller.php",
-		"/C/xampp/htdocs/aplikacja/view/view.php",
 		"/C/xampp/htdocs/aplikacja/classes/sessionMessage.php",
 		"/C/xampp/htdocs/aplikacja/model/model.php",
 		"/C/xampp/htdocs/artykuly/model/categories.php",
 		"/C/xampp/htdocs/artykuly/controller/categories.php",
 		"/C/xampp/htdocs/artykuly/index.php",
-		"/C/xampp/htdocs/aplikacja/model/login.php",
-		"/C/xampp/htdocs/aplikacja/templates/css/main.css",
-		"/C/xampp/htdocs/aplikacja/templates/loginForm.html.php",
 		"/C/xampp/htdocs/artykuly/templates/indexCategory.html.php",
 		"/C/xampp/htdocs/artykuly/view/categories.php",
 		"/C/xampp/htdocs/budgetOOP2/balanceSheetLogic.php",
@@ -207,11 +298,7 @@
 		"/C/xampp/htdocs/budget/balanceSheet.php",
 		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.php",
 		"/C/xampp/htdocs/budgetOOP/balanceSheet.php",
-		"/C/xampp/htdocs/aplikacja/controller/addExpense.php",
-		"/C/xampp/htdocs/aplikacja/templates/registerForm.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/indexMain.html.php",
 		"/C/xampp/htdocs/aplikacja/controller/register.php",
-		"/C/xampp/htdocs/aplikacja/controller/login.php",
 		"/C/xampp/htdocs/budget/config.php",
 		"/C/xampp/htdocs/budgetOOP/config.php",
 		"/C/xampp/htdocs/budgetOOP2/config.php",
@@ -251,49 +338,11 @@
 		"/C/xampp/htdocs/app/classes/Application.php",
 		"/C/xampp/htdocs/app/classes/ApplicationFront.php",
 		"/C/xampp/htdocs/artykuly/controller/controller.php",
-		"/C/xampp/htdocs/app/index.php",
-		"/C/xampp/htdocs/artykuly/config/sql.php",
-		"/C/xampp/htdocs/app/config.php",
-		"/C/xampp/htdocs/app/views/mainView.php",
-		"/C/xampp/htdocs/app/templates/ApplicationFront.php",
-		"/C/xampp/htdocs/app/templates/Application.php",
-		"/C/xampp/htdocs/app/app.sublime-project",
-		"/C/xampp/htdocs/ksiegarnia/klasy/Portal.php",
-		"/C/xampp/htdocs/ksiegarnia/klasy/PortalFront.php",
-		"/C/xampp/htdocs/ksiegarnia/index.php",
-		"/C/xampp/htdocs/ksiegarnia/ksiegarnia.sublime-project",
-		"/C/xampp/htdocs/budgetOOP/connectionService.php",
-		"/C/xampp/htdocs/ksiegarnia/klasy/MyDB.php",
-		"/C/xampp/htdocs/mvc/index.php",
-		"/C/xampp/htdocs/mvc/controllers/Gallery.php",
-		"/C/xampp/htdocs/mvc/controllers/User.php",
-		"/C/xampp/htdocs/mvc/controllers/Index.php",
-		"/C/xampp/htdocs/mvc/libs/Controller.php",
-		"/C/xampp/htdocs/mvc/libs/Router.php",
-		"/C/xampp/htdocs/mvc/.htaccess",
-		"/C/xampp/htdocs/mvc/mvc.sublime-project",
-		"/C/xampp/htdocs/20/klasy/PortalFront.php",
-		"/C/xampp/htdocs/20/templates/mainTemplate.php",
-		"/C/xampp/htdocs/20/templates/registrationForm.php",
-		"/C/xampp/htdocs/20/klasy/Registration.php",
-		"/C/xampp/htdocs/20/klasy/FormInput.php",
-		"/C/xampp/htdocs/20/index.php",
-		"/C/Users/Qki/Desktop/WWW/Książki/PHP i MySQL/php-i-mysql-dla-kazdego-wydanie-iii-marcin-lis/listingi (utf-8)/r20/projekt/index.php",
-		"/C/Users/Qki/Desktop/WWW/Książki/PHP i MySQL/php-i-mysql-dla-kazdego-wydanie-iii-marcin-lis/listingi (utf-8)/r20/projekt/klasy/Registration.php",
-		"/C/Users/Qki/Desktop/WWW/Książki/PHP i MySQL/php-i-mysql-dla-kazdego-wydanie-iii-marcin-lis/listingi (utf-8)/r20/projekt/klasy/PortalFront.php",
-		"/C/xampp/htdocs/20/templates/loginForm.php",
-		"/C/xampp/htdocs/20/klasy/Portal.php",
-		"/C/xampp/htdocs/20/templates/innerContentDiv.php",
-		"/C/xampp/htdocs/20/constants.php",
-		"/C/xampp/htdocs/budgetOOP2/getAllCategories.php",
-		"/C/xampp/htdocs/budgetOOP2/getIncomes.php",
-		"/C/xampp/htdocs/budgetOOP2/balanceSheet.php",
-		"/C/xampp/htdocs/budgetOOP2/app.js",
-		"/C/xampp/htdocs/budgetOOP2/deleteIncome.php"
+		"/C/xampp/htdocs/app/index.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -307,6 +356,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"categories",
+			"border",
+			"register",
+			"<p>",
+			"mainmenu",
+			"mainMenuButton",
+			"mainmenu",
+			"mainMenu",
+			"#logButton",
+			"register",
+			"re",
+			"reca",
+			"g-recaptcha",
+			"imageselect",
+			"modal",
+			"myModal",
+			"my",
+			"color",
+			"a:",
+			"menu",
+			"index",
+			"row",
+			"loginfooter",
+			"login",
+			"a:",
+			"btn",
+			"appInfo",
+			"app",
+			"logo",
+			"collapse",
+			"nav",
+			"container",
+			"logo",
+			"();?>\">\n",
+			"js",
 			"\">\n",
 			"$_SESSION['edit_id']",
 			"edit_id",
@@ -346,53 +430,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "templates/indexMain.html.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1709,
-								1709
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
 					"file": "templates/css/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9473,
+						"buffer_size": 8342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1774,
-								1774
+								339,
+								339
 							]
 						],
 						"settings":
@@ -401,10 +451,184 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1665.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/balanceSheet.html.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view/showBalance.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1335,
+								1335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/income.html.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/balanceNavbar.html.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2116,
+								2129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/header.html.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "model/showBalance.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -412,7 +636,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -427,18 +651,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -460,7 +677,7 @@
 	"project": "projekt.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -490,7 +707,7 @@
 		],
 		"width": 465.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"xdebug":
@@ -498,50 +715,25 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"15":
+				"14":
 				{
 					"group": 0,
 					"index": 0
 				},
-				"48":
-				{
-					"group": 2,
-					"index": 1
-				},
-				"49":
-				{
-					"group": 1,
-					"index": 0
-				},
-				"50":
-				{
-					"group": 2,
-					"index": 0
-				},
-				"51":
-				{
-					"group": 1,
-					"index": 1
-				},
-				"55":
+				"18":
 				{
 					"group": 0,
 					"index": 1
 				},
-				"56":
-				{
-					"group": 0,
-					"index": 2
-				},
-				"58":
+				"31":
 				{
 					"group": 0,
 					"index": 3
 				},
-				"60":
+				"34":
 				{
 					"group": 0,
-					"index": 4
+					"index": 2
 				}
 			},
 			"restore_layout":
@@ -551,32 +743,18 @@
 					[
 						0,
 						0,
-						2,
+						1,
 						1
-					],
-					[
-						0,
-						1,
-						1,
-						2
-					],
-					[
-						1,
-						1,
-						2,
-						2
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.5,
 					1.0
 				],
 				"rows":
 				[
 					0.0,
-					0.701506024096,
 					1.0
 				]
 			}

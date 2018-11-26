@@ -17,13 +17,13 @@ class LoginModel extends Model{
 	private function getCredentials()
 	{
 		if($_POST['login'] == "" && $_POST['password'] == "")
-    		throw new exception('Fill the form to perform a login attempt.');
+    		throw new Exception('Wypełnij formularz aby się zalogować');
 		else {
 		    $user = $_POST['login'];
 			$password = $_POST['password'];
 
 			if(((strlen($user) < 3) || (strlen($user) > 20)) || (strlen($password) < 6) || (strlen($password) > 20))
-				throw new exception('Data is invalid! Try again.');
+				throw new exception('Niewłaściwy login lub hasło');
 
 			$user = $this->dbo->real_escape_string($user);
 			$password = $this->dbo->real_escape_string($password);
@@ -46,10 +46,10 @@ class LoginModel extends Model{
 		$query .= "FROM users WHERE username = '$user'";
 
 		if(!$result = $this->dbo->query($query))
-			throw new exception('Query error. Please try to login in other time!');
+			throw new exception('Błąd zapytania. Prosimy o próbę zalogowania w innym terminie.');
 
 		if($result->num_rows <> 1)
-			throw new exception('Invalid user or password!');
+			throw new exception('Niewłaściwy login lub hasło!');
 		else{
 			$row = mysqli_fetch_assoc($result);
 
@@ -60,7 +60,7 @@ class LoginModel extends Model{
 				$_SESSION['email'] = $row['email'];
 			}
 			else
-			    throw new exception('Invalid user or password!');
+			    throw new exception('Niewłaściwy login lub hasło!');
 		}
 	}
 }

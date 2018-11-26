@@ -2,80 +2,48 @@
 if(!isset($_SESSION['is_logged'])){
 	header("Location: ../index.php?task=login&action=index");
 }
-?>
 
-<!DOCTYPE HTML>
-<html lang="pl">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<title>Aplikacja budżetowa - Logowanie</title>
-		<meta name="description" content="Aplikacja budżetowa dla każdego">
-		<meta name="keywords" content="Aplikacja, Budżetowa, oszczędzanie, pieniądze">
-		<meta name="author" content="ŁK">
-		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-		
-		<link rel="stylesheet" href="templates/css/bootstrap.min.css">
-		<link rel="stylesheet" href="templates/css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet"> 
-		<script src = "js/jquery.js"></script>
-		<script type ="text/javascript" src = "templates/js/clock.js"></script>
-		
-		<!--[if lt IE 9]>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<![endif]-->
-		
-	</head>
-	
-	<body onload="countdown();">
-		<div class="container">
-			<header>
+include "head.html.php";
+include "header.html.php";
+?>			
+			<main>	
 				<div class="row">
-					<div class="col-md-12">
-						<h1 class = "logo">Aplikacja Budżetowa</h1>
+					<div class="col-sm-6 col-md-5 offset-md-1 text-center">
+						<p class="mainMenuText">Otrzymałeś przypływ gotówki? Dodaj go tutaj!</p>
+						<label class="indexMain mainMenuIcon">
+							<a href="?task=addIncome&action=addIncomeView"><p><i class="icon-money"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Dodaj przychód</button></a>
+						</label>
+					</div>
+
+					<div class="col-sm-6 col-md-5 text-center"> 
+						<p class="mainMenuText">Byłeś na zakupach? Koniecznie je dodaj!</p>
+						<label class="indexMain mainMenuIcon">
+							<a href="?task=addExpense&action=addExpenseView"><p><i class="icon-basket"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Dodaj wydatek</button></a>
+					</label>
+					</div>
+
+					<div class="col-sm-6 col-md-4 text-center">
+						<p class="mainMenuText">Zobacz jak Ci idzie oszczędzanie!</p>
+						<label class="indexMain mainMenuIcon">
+							<a href="?task=showBalance&action=index"><p><i class="icon-chart-pie"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Przeglądaj bilans</button></a>
+					</label>
+					</div>	
+
+					<div class="col-sm-6 col-md-4 text-center"> 
+						<p class="mainMenuText">Tu wprowadzisz wszelkie zmiany!</p>
+						<label class="indexMain mainMenuIcon">
+							<a href="settings.php"><p><i class="icon-cog-alt"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Ustawienia</button></a>
+					</label>
+					</div>
+
+					<div class="col-sm-12 col-md-4 text-center"> 
+						<p class="mainMenuText">Do zobaczenia!</p>
+						<label class="indexMain mainMenuIcon">
+							<a href="templates/logout.php"><p><i class="icon-logout"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Wyloguj się</button></a>
+					</label>
 					</div>
 				</div>
-			</header>
-			<div class="row">
-				<div class="col-md-12">
-						<nav class = "topnav">
-								<ul class="menu nav justify-content-center">
-									  <li class="nav-link"><?='<p>Witaj ' . $_SESSION['username'] . '!'; ?></li>
-									  <li class="nav-link">Menu Główne</li>
-									  <li class="nav-link" id="clock">12:00:00</li>
-								</ul>
-						</nav>
-				</div>
-			</div>				
-								
-			<main>
-					<div class = "mainmenu">
-						<div class="col-md-12-6 text-center"> 
-							<a href="?task=addIncome&action=index"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Dodaj przychód</button></a>
-						</div>
-						<div class="col-md-12-6 text-center"> 
-							<a href = "?task=addExpense&action=index"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Dodaj wydatek</button></a>
-						</div>
-						<div class="col-md-12-6 text-center"> 
-							<a href = "?task=showBalance&action=index"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Przeglądaj bilans</button></a>
-						</div>	
-						<div class="col-md-12-6 text-center"> 
-							<a href = "settings.php"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Ustawienia</button></a>
-						</div>
-						<div class="col-md-12-6 text-center"> 
-							<a href = "templates/logout.php"><button class="mainMenuButton" name="singlebutton" class="btn btn-warning">Wyloguj się</button></a>
-						</div>
-					</div>
 			</main>
-
-			<footer>
-				<div class = "info">
-
-					Łukasz Kruszelnicki - Wszelkie prawa zastrzeżone &copy; 2018
-				
-				</div>
-			</footer>
-		</div>
-	</body>
-</html>
+<?php 
+include "footer.html.php";
+?>

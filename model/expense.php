@@ -2,8 +2,22 @@
 
 include 'model/model.php';
 
-class EditExpenseModel extends Model
+class ExpenseModel extends Model
 {
+	protected $user_id;
+
+	public function addExpense()
+	{
+		try{
+		    $this->checkIfAmountIsValid();
+		    $payment_method_id = $this->getPaymentMethodId();
+			$expense_category_id = $this->getExpenseCategoryId();
+			$this->addExpenseToDb($payment_method_id, $expense_category_id, $_POST['amount']);
+		} catch (Exception $e) {
+			$_SESSION['message'] = $e->getMessage();
+		}
+	}
+
 	public function editExpense()
 	{
 		try{
@@ -58,6 +72,24 @@ class EditExpenseModel extends Model
 		}
 		else
 			throw new Exception('Wystąpił błąd podczas ustalania kategorii!');
+	}
+
+	private function addExpenseToDb($payment_method_id, 
+		$expense_category_id, $amount)
+	{
+		$date = $_POST['date'];
+		$comment = $_POST['comment'];
+		$user_id = $_SESSION['id'];
+
+		$query = "INSERT INTO expenses
+				  VALUES(NULL, '$user_id', '$expense_category_id', 
+				  '$payment_method_id' , '$amount', '$date', '$comment')";
+
+		if($this->dbo->query($query))
+			$_SESSION['expense_approved'] = true;
+		else
+			throw new Exception('Błąd zapytania! Przepraszamy za niedogodności i prosimy o próbę dodania wydatku 
+				w innym terminie!');
 	}
 
 	private function editExpenseInDb($payment_method_id, 

@@ -2,8 +2,21 @@
 
 include 'model/model.php';
 
-class EditIncomeModel extends Model
-{
+class IncomeModel extends Model{
+
+	protected $user_id;
+
+	public function addIncome()
+	{
+	    try{
+	    	$this->checkIfAmountIsValid();
+	    	$income_category_id = $this->getIncomeCategoryId();
+	    	$this->addIncomeToDb($income_category_id, $_POST['amount']);
+	    } catch (Exception $e) {
+	        $_SESSION['message'] = $e->getMessage();
+	    }
+	}
+
 	public function editIncome()
 	{
 	    try{
@@ -39,6 +52,22 @@ class EditIncomeModel extends Model
 			throw new Exception('Wystąpił błąd podczas ustalania kategorii!');
 	}
 
+	private function addIncomeToDb($income_category_id, $amount)
+	{
+		$date = $_POST['date'];
+		$comment = $_POST['comment'];
+		$user_id = $_SESSION['id'];
+
+		$query = "INSERT INTO incomes 
+				  VALUES(NULL, '$user_id', '$income_category_id', '$amount', '$date', '$comment')";
+
+		if($this->dbo->query($query))
+			$_SESSION['income_approved'] = true;
+		else
+			throw new Exception('Błąd zapytania! Przepraszamy za niedogodności i prosimy o próbę dodania przychodu 
+				w innym terminie!');
+	}
+
 	private function editIncomeInDb($income_category_id, $amount)
 	{
 		$date = $_POST['date'];
@@ -62,6 +91,12 @@ class EditIncomeModel extends Model
 			throw new Exception('Błąd zapytania! Przepraszamy za niedogodności i prosimy o próbę edycji przychodu 
 				w innym terminie!');
 	}
+
+	public function getIncomeCategories()
+	{
+		$user_id = $_SESSION['id'];
+        return $this->select('incomes_category_assigned_to_users', '*', "user_id='$user_id'");
+    }
 
 	public function getIncome()
 	{
@@ -97,10 +132,4 @@ class EditIncomeModel extends Model
 	        $_SESSION['message'] = $e->getMessage();
 	    }
 	}
-
-	public function getIncomeCategories()
-	{
-		$user_id = $_SESSION['id'];
-        return $this->select('incomes_category_assigned_to_users', '*', "user_id='$user_id'");
-    }
 }

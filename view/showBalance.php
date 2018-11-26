@@ -22,8 +22,10 @@ class ShowBalanceView extends View
 	{
 		if($allData == 'all_incomes'){
 			$dataType = 'incomes';
+			$viewType = 'Income';
 		} else if($allData == 'all_expenses'){
 			$dataType = 'expenses';
+			$viewType = 'Expense';
 		}
 
 		$i=1;
@@ -37,8 +39,8 @@ class ShowBalanceView extends View
 				<td class="tableInput category">' . $data['name'] . '</td>
 				<td class="tableInput comment">' . $data['comment'] . '</td>
 				<td class="tableInput">
-				    <a href="?task=edit&action=index&type=' . $dataType . '&id=' . $data['id'] . '">EDYTUJ</a>  
-				    <a href="?task=delete&action=delete&type=' . $dataType . '&id=' . $data['id'] . '">USUŃ</a>
+				    <a id="edit" href="?task=edit&action=edit' . $viewType  . 'View&type=' . $dataType . '&id=' . $data['id'] . '">EDYTUJ</a>  
+				    <a id="delete" href="?task=delete&action=delete&type=' . $dataType . '&id=' . $data['id'] . '">USUŃ</a>
 				</td>
 			</tr>';
 			$i++;

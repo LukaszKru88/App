@@ -2,18 +2,35 @@
 
 include 'view/view.php';
 
-class EditIncomeView extends View
+class IncomeView extends View
 {
-	public function index()
+	public function addIncomeView()
 	{
-		$income = $this->loadModel('editIncome');
+		$incomeCategories = $this->loadModel('income');
+		$this->set('incomeCategories', $incomeCategories->getIncomeCategories());
+	    $this->render('income');
+	}
+
+	public function editIncomeView()
+	{
+		$income = $this->loadModel('income');
 		$this->editIncome = $income->getIncome();
 		$this->categoryName = $income->getCategoryName($this->editIncome);
 		$this->set('incomeCategories', $income->getIncomeCategories());
-		$this->render('editIncome');
+		$this->render('income');
 	}
 
-	public function printIncomeCategories($incomeCategories)
+	public function addIncomeCategories($incomeCategories)
+	{
+		$i=1; 
+		foreach($this->get($incomeCategories) as $category) 
+		{
+			echo '<li><label class="form-check-label" for="exampleRadios' . $i . '"><input class="form-check-input" type="radio" name="category" id="exampleRadios' . $i . '"  value="' . $category['name'] . '"' . ($i == 1 ? "checked" : "") . '>' . $category['name'] . '</label></li>';
+		$i++;
+		}
+	}
+
+	public function editIncomeCategories($incomeCategories)
 	{
 		$i=1; 
 		foreach($this->get($incomeCategories) as $category) 

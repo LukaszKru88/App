@@ -17,22 +17,25 @@ class ShowBalanceModel extends Model
 
 	private function setTimePeriod()
 	{
-		if(isset($_POST['time_period'])){
-		    switch($_POST['time_period']){
-			    case('last_month'):
+		if(isset($_GET['timePeriod'])){
+		    switch($_GET['timePeriod']){
+			    case('lastMonth'):
 				    $start_date=date("Y-m-d", 
 				    	strtotime("first day of last month"));
 				    $end_date=date("Y-m-d", strtotime("last day of last month"));
+				    $_SESSION['timePeriod'] = "Poprzedni Miesiąc";
 				    break;
-			    case('this_year'):
+			    case('thisYear'):
 				    $start_date=date("Y-m-d", 
 					  strtotime('first day of January'. date('Y')));
 				    $end_date=date("Y-m-d");
+				    $_SESSION['timePeriod'] = "Bieżący Rok";
 				    break;
 			    case('another'):
 				    if((isset($_POST['start_date'])) && (isset($_POST['end_date']))){
 					    $start_date=$_POST['start_date'];
-					    $end_date=$_POST['end_date'];		
+					    $end_date=$_POST['end_date'];
+					    $_SESSION['timePeriod'] = "Niestandardowy Zakres Dat";	
 				    }
 				    else
 				    {
@@ -43,6 +46,7 @@ class ShowBalanceModel extends Model
 				    $start_date=date("Y-m-d", 
 					    strtotime("first day of this month"));
 				    $end_date=date("Y-m-d");
+				    $_SESSION['timePeriod'] = "Bieżący Miesiąc";
 				    break;			
 		    }
 		    $time_period = array($start_date, $end_date);
@@ -58,6 +62,7 @@ class ShowBalanceModel extends Model
 		$start_date=date("Y-m-d", strtotime("first day of this month"));
 		$end_date=date("Y-m-d");
 		$time_period = array($start_date, $end_date);
+		$_SESSION['timePeriod'] = "Bieżący Miesiąc";
 		return $time_period;
 	}
 

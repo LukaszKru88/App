@@ -1,15 +1,154 @@
-body
-{
-	background-color: #173e43;
-	margin: 0px;
+body, html {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 }
 
-.btn a
-{
-	    color: #173e43;
+a, a:hover {
+	color: #173e43;
 	text-decoration: none;
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.bg  {
+    background-image: url("background/buisnessman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%; 
+}
+
+.content  {
+  position: center;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.logo {
+	margin-bottom: 15px;
+	font-size: 59px;
+	font-weight: 400;
+	color: #F0EDE5;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	transition: all 1s;
+}
+
+.appInfo, .quote {
+	background-color: #dddfd4;
+	text-transform: uppercase;
+	padding: 25px 25px 5px 25px;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 5px;
+	border-radius: 5px;
+	color: #173e43;
+}
+
+#quote {
+	line-height: 150%;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.indexMain {
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 150%;
+	letter-spacing: 2px;
+	width: 100%;
+	cursor:pointer;
+}
+
+.indexMain:hover {
+	font-size: 16px;
+	transition: all 0.5s;
+}
+
+.menu  {
+	margin: 0;
+	padding: 5px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+#login, #password, #mailbox, #amountbox, #date, #commentbox {
+	margin-top: 30px;
+}
+
+.modal-body {
+	text-align: justify;
+}
+
+.rule {
+	color: black;
+	text-transform: uppercase;
+	margin: 30px 0 0 10px;
+}
+
+.recaptcha  {
+	margin-top: 20px;
+}
+
+.mainMenuButton {
+	width: 100%;
+	height: 50px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transition: font-size 0.5s;
+}
+
+.mainMenuIcon {
+	border: 2px solid #17a2b8;
+	border-radius: 7px;
+	font-size: 32px;
+	transition: font-size 0.5s;
+}
+
+.mainMenuIcon:hover {
+	font-size: 36px;
+}
+
+.mainMenuText {
+	margin-top: 10px;
+	width: 100%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.navbar {
+	font-size: 12px;
+}
+
+label {
+	cursor:pointer;
+}
+
+#edit {
+	font-size: 10px;
+	color: #00C851;
+}
+
+#edit:hover {
+	color: #007E33;
+}
+
+#delete {
+	font-size: 10px;
+	color: #ff4444;
+}
+
+#delete:hover {
+	color: #CC0000;
 }
 
 .error
@@ -32,137 +171,14 @@ body
 	text-align: center !important;
 }
 
-.row
-{
-	margin: 0px !important;
-}
-
-.logo
-{
-	margin: 0px;
-	margin-bottom: 10px;
-	background-color: #173e43;
-	font-size: 59px;
-	font-weight: 400;
-	color: #F0EDE5;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 7px;
-	transition: all 1s;
-}
-
-.menu 
-{
-	margin: 0;
-	color: #fff !important;
-	padding: 5px;
-	font-size: 18px;
-	background-color: #3fb0ac;
-	border-radius: 5px;
-	text-transform: uppercase;
-}
-
-.menu a
-{
-	color: #fff;
-	text-decoration: none;
-}
-
-.menu a:hover
-{
-	color: #0a2b42;
-}
-
 h3
 {
 	margin: 0px;
 	margin-bottom: 10px;
-	text-align: center;
 	font-size: 18px;
 	color: #173e43;
 	font-weight: 400;
-}
-
-.east
-{
-	text-align: center;
-	margin-top: 80px;
-	transition: margin-top 1.5s
-}
-
-.appInfo
-{
-	background-color: #dddfd4;
-	text-transform: uppercase;
-	padding: 25px;
-	text-align: justify;
-	font-size: 15px;
-	margin-top: 5px;
-	border-radius: 5px;
-	color: #173e43;
-}
-
-.quote
-{
-
-	background-color: #dddfd4;
-	text-transform: uppercase;
-	padding:  25px 25px 10px 25px;
-	text-align: justify;
-	font-size: 15px;
-	margin-top: 5px;
-	border-radius: 5px;
-	line-height: 150%;
-	margin-bottom: 0;
-}
-
-.login
-{
-	width: 50%;
-	background-color: #f2b632;
-	font-size: 20px;
-	color: #173e43;
-	padding: 15px;
-	letter-spacing: 2px;
-	outline: none;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	border: 2px solid #f2b632;
-	text-transform: uppercase;
-	border-radius: 5px;
-	transition: font-size 1s;
-}
-
-.login:hover
-{
-	background-color: #fae596;
-}
-
-.register
-{
-	width: 50%;
-	background-color: #f2b632;
-	font-size: 20px;
-	color: #173e43;
-	padding: 15px;
-	letter-spacing: 2px;
-	outline: none;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	border: 2px solid #f2b632;
-	text-transform: uppercase;
-	border-radius: 5px;
-	transition: font-size 1s;
-}
-
-.register:hover
-{
-	background-color: #fae596;
-}
-
-footer
-{
-	margin: 0 15px;
+	font-weight: bold;
 }
 
 .info
@@ -172,66 +188,16 @@ footer
 	color: #F0EDE5;
 	background-color: #000;
 	padding: 10px;
-	border-radius: 5px;
-}
-
-#login, #password, #namebox, #mailbox, #password1box, #password2box, #amountbox, #date, #commentbox
-{
-	font-family: 'Open Sans', sans-serif;
-	color: #666;
-	border: 2px solid #dddddd;
-	border-radius: 8px;
-	font-size: 20px;
-	box-sizing: border-box;
-	outline: none;
-	margin: 30px 15px 0 15px;
-}
-
-.rule
-{
-	font-family: 'Open Sans', sans-serif;
-	color: black;
-	font-size: 20px;
-	box-sizing: border-box;
-	outline: none;
-	margin: 10px 15px 0 15px;
-}
-
-.confirm
-{
-	background-color: #f2b632;
-	font-size: 15px;
-	color: #173e43;
-	cursor: pointer;
-	letter-spacing: 2px;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-.confirm:hover
-{
-	background-color: #fae596;
 }
 
 #logButton, #registerButton, #addButton, #cancelButton
 {
-	background-color: #f2b632;
-	font-size: 20px;
-	color: #173e43;
-	padding: 15px;
+	margin-top: 15px;
+	padding: 10px;
 	cursor: pointer;
 	letter-spacing: 2px;
 	outline: none;
-	margin-top: 30px;
-	margin-bottom: 20px;
-	border: 2px solid #f2b632;
 	text-transform: uppercase;
-	border-radius: 5px;
-}
-
-#logButton:hover, #registerButton:hover, #addButton:hover, #cancelButton:hover
-{
-	background-color: #fae596;
 }
 
 .sidemenu
@@ -274,31 +240,10 @@ footer
 	border-left: 1px dashed #0a2b42;
 }
 
-.mainMenuButton
-{
-	width: 50%;
-	background-color: #f2b632;
-	font-size: 20px;
-	margin: 16px !important;
-	padding: 10px !important;
-	color: #173e43;
-	letter-spacing: 2px;
-	outline: none;
-	border: 2px solid #f2b632;
-	text-transform: uppercase;
-	border-radius: 5px;
-	transition: font-size 1s;
-}
-
-.mainMenuButton:hover
-{
-	background-color: #fae596;
-}
-
 .categories
 {
 	width: 70%;
-	background-color: #f2b632;
+	background-color: #17a2b8;
 	font-size: 20px;
 	padding: 10px 0 0 0;
 	color: #173e43;
@@ -306,7 +251,7 @@ footer
 	letter-spacing: 2px;
 	margin-top: 30px;
 	margin-bottom: 20px;
-	border: 2px solid #f2b632;
+	border: 2px solid #17a2b8;
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin-left: auto;
@@ -326,7 +271,6 @@ footer
 .categories > ul > li
 {
 	border-bottom: 1px dashed #0a2b42;
-
 	letter-spacing: 1px;
 	font-size: 15px;
 	margin-left: -15px;
@@ -336,7 +280,7 @@ footer
 .categories > ul > li:hover
 {
 	display: block;
-	background-color: #fae596;
+	background-color: #0097a7;
 	cursor: pointer;
 }
 
@@ -452,6 +396,18 @@ footer
 		margin-top: 20px;
 		transition: margin-top 1.5s
 	}
+
+	.logo
+	{
+		margin-bottom: 15px;
+		font-size: 40px;
+		font-weight: 400;
+		color: #F0EDE5;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		transition: all 1s;
+	}
 }
 
 @media only screen and (min-width: 500px) and (max-width: 575px) {
@@ -466,8 +422,7 @@ footer
 	.logo
 	{
 		margin-bottom: 15px;
-		background-color: #173e43;
-		font-size: 40px;
+		font-size: 32px;
 		font-weight: 400;
 		color: #F0EDE5;
 		text-align: center;
@@ -476,38 +431,17 @@ footer
 		transition: all 1s;
 	}	
 	
-	.login
+	.mainMenuButton,
 	{
 		width: 60%;
-		font-size: 15px;
-		transition: font-size 1s;
+		font-size: 12px;
+		transition: font-size 0.5s;
 	}
-		
-	.register
+
+	.mainMenuIcon
 	{
 		width: 60%;
-		font-size: 15px;
-		transition: font-size 1s;
 	}
-		
-	.east
-	{
-		margin-top: 20px;
-		transition: margin-top 1.5s
-	}
-		
-	#registerButton, #addButton, #cancelButton, #logButton
-	{
-		font-size: 15px;
-		transition: all 1s;
-	}
-		
-	.mainMenuButton
-	{
-		width: 60%;
-		font-size: 15px;
-		transition: font-size 1s;
-	}	
 		
 	.categories
 	{
@@ -554,15 +488,22 @@ footer
 		
 	.logo
 	{
-		margin-bottom: 0;
-		background-color: #173e43;
-		font-size: 28px;
+		margin-bottom: 15px;
+		font-size: 20px;
 		font-weight: 400;
 		color: #F0EDE5;
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 7px;
 		transition: all 1s;
+	}
+
+	.g-recaptcha 
+	{
+		transform:scale(0.85);
+		-webkit-transform:scale(0.85);
+		transform-origin:0 0;
+		-webkit-transform-origin:0 0;
 	}		
 	
 	.error
@@ -576,20 +517,6 @@ footer
 		font-size: 12px !important;
 		transition: all 1s;
 	}
-	
-	.login
-	{
-		width: 70%;
-		font-size: 12px;
-		transition: font-size 1s;
-	}
-		
-	.register
-	{
-		width: 70%;
-		font-size: 12px;
-		transition: font-size 1s;
-	}	
 
 	.east
 	{
@@ -606,15 +533,20 @@ footer
 	#registerButton, #addButton, #cancelButton, #logButton
 	{
 		font-size: 12px;
-		transition: all 1s;
+		transition: font-size 1s;
 	}
 	
 	.mainMenuButton
 	{
-		width: 70%;
+		width: 100%;
 		font-size: 12px;
-		transition: font-size 1s;
+		transition: font-size 0.5s;
 	}	
+
+	.mainMenuIcon
+	{
+		width: 100%;
+	}
 	
 	.categories
 	{
@@ -631,7 +563,7 @@ footer
 		transition: all 1s;
 	}
 	
-		.tables
+	.tables
 	{
 		font-size: 12px;
 		transition: all 1s;
