@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"delete",
+				"deleteCategoryInDb"
+			],
+			[
+				"changeCategoriesId",
+				"changeCategoriesIdQuery"
+			],
+			[
+				"delet",
+				"deleteCategory"
+			],
+			[
+				"categ",
+				"categoryId"
+			],
+			[
+				"getCa",
+				"getCategoriesQuery"
+			],
+			[
+				"new",
+				"newCategory"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"isNo",
+				"isNotExisting"
+			],
+			[
+				"incom",
+				"incomeCategoryId"
+			],
+			[
+				"editCa",
+				"editCategoryInDb"
+			],
+			[
+				"cate",
+				"categoryName"
+			],
+			[
+				"manage",
+				"manageCategory"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"modal",
+				"modal-title"
+			],
+			[
+				"get",
+				"getCategories"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
 				"inline",
 				"inline-block\tdisplay"
 			],
@@ -18,14 +82,6 @@
 			[
 				"add",
 				"addExpense"
-			],
-			[
-				"cate",
-				"categoryLoader"
-			],
-			[
-				"_",
-				"_SESSION"
 			],
 			[
 				"check",
@@ -100,66 +156,109 @@
 	"buffers":
 	[
 		{
-			"file": "templates/css/main.css",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 8342,
+				"buffer_size": 1724,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controller/settings.php",
+			"settings":
+			{
+				"buffer_size": 633,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "view/settings.php",
+			"settings":
+			{
+				"buffer_size": 1324,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "model/settings.php",
+			"settings":
+			{
+				"buffer_size": 5917,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/js/settings.js",
+			"settings":
+			{
+				"buffer_size": 11411,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/settings.html.php",
+			"settings":
+			{
+				"buffer_size": 2552,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/crud/index.html",
+			"settings":
+			{
+				"buffer_size": 8506,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/balanceSheet.html.php",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 4657,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
-			"file": "view/showBalance.php",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 1908,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
-			"file": "templates/income.html.php",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 2649,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
 			}
 		},
 		{
-			"file": "templates/balanceNavbar.html.php",
+			"contents": "=> C:\\xampp\\htdocs\\aplikacja\\index.php\n\t|+| 4\n",
 			"settings":
 			{
-				"buffer_size": 4325,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/header.html.php",
-			"settings":
-			{
-				"buffer_size": 200,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "model/showBalance.php",
-			"settings":
-			{
-				"buffer_size": 5877,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 46,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -207,43 +306,71 @@
 	[
 		"/C/xampp/htdocs/aplikacja",
 		"/C/xampp/htdocs/aplikacja/model",
-		"/C/xampp/htdocs/aplikacja/view"
+		"/C/xampp/htdocs/aplikacja/templates",
+		"/C/xampp/htdocs/aplikacja/templates/css",
+		"/C/xampp/htdocs/aplikacja/templates/js"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/aplikacja/templates/config.php",
+		"/C/xampp/htdocs/crud/ajax.php",
+		"/C/xampp/htdocs/aplikacja/templates/css/main.css",
+		"/C/xampp/htdocs/aplikacja/model/income.php",
+		"/C/xampp/htdocs/aplikacja/model/deleteCashFlow.php",
 		"/C/xampp/htdocs/aplikacja/model/showBalance.php",
-		"/C/xampp/htdocs/aplikacja/index.php",
-		"/C/xampp/htdocs/aplikacja/controller/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/templates/settings.html.php",
+		"/C/xampp/htdocs/aplikacja/view/settings.php",
+		"/C/xampp/htdocs/aplikacja/model/settings.php",
+		"/C/xampp/htdocs/aplikacja/controller/settings.php",
+		"/C/xampp/htdocs/aplikacja/templates/js/settings.js",
+		"/C/xampp/htdocs/aplikacja/model/register.php",
 		"/C/xampp/htdocs/aplikacja/view/view.php",
+		"/C/xampp/htdocs/mmtuts/#5/index.php",
+		"/C/xampp/htdocs/mmtuts/#5/mail.php",
+		"/C/xampp/htdocs/crud/index.html",
+		"/C/xampp/htdocs/mmtuts/#5/style.css",
+		"/C/xampp/htdocs/aplikacja/view/income.php",
+		"/C/xampp/htdocs/aplikacja/index.php",
+		"/C/xampp/htdocs/aplikacja/templates/footer.html.php",
 		"/C/xampp/htdocs/aplikacja/controller/controller.php",
-		"/C/xampp/htdocs/aplikacja/view/showBalance.php",
-		"/C/xampp/htdocs/aplikacja/templates/balanceNavbar.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/expense.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/mainNavbar.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/income.html.php",
-		"/C/xampp/htdocs/aplikacja/view/expense.php",
+		"/C/xampp/htdocs/aplikacja/model/login.php",
 		"/C/xampp/htdocs/aplikacja/controller/income.php",
-		"/C/xampp/htdocs/aplikacja/templates/indexMain.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/mainMenu.html.php",
+		"/C/xampp/htdocs/aplikacja/view/expense.php",
+		"/C/xampp/htdocs/aplikacja/controller/expense.php",
+		"/C/xampp/htdocs/aplikacja/model/expense.php",
+		"/C/xampp/htdocs/mmtuts/#3/hide-comments.php",
+		"/C/xampp/htdocs/mmtuts/#3/load-comments.php",
+		"/C/xampp/htdocs/mmtuts/#3/index.php",
+		"/C/xampp/htdocs/aplikacja/model/model.php",
+		"/C/xampp/htdocs/aplikacja/config/config.php",
+		"/C/xampp/htdocs/aplikacja/controller/register.php",
+		"/C/xampp/htdocs/aplikacja/view/login.php",
 		"/C/xampp/htdocs/aplikacja/templates/registerForm.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/formNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/js/clock.js",
+		"/C/xampp/htdocs/aplikacja/templates/js/transpose_table.js",
+		"/C/xampp/htdocs/aplikacja/templates/js/jquery.js",
+		"/C/xampp/htdocs/aplikacja/templates/income.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.html.php",
 		"/C/xampp/htdocs/aplikacja/templates/loginForm.html.php",
+		"/C/xampp/htdocs/aplikacja/controller/login.php",
+		"/C/xampp/htdocs/aplikacja/templates/balanceNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/mainMenu.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/mainNavbar.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/header.html.php",
+		"/C/xampp/htdocs/aplikacja/view/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/templates/config.php",
+		"/C/xampp/htdocs/aplikacja/controller/showBalance.php",
+		"/C/xampp/htdocs/aplikacja/templates/expense.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/indexMain.html.php",
+		"/C/xampp/htdocs/aplikacja/templates/formNavbar.html.php",
 		"/C/Users/Qki/Desktop/WWW/BOOTSTRAP/main.css",
 		"/C/Users/Qki/Desktop/WWW/BOOTSTRAP/index.html",
 		"/C/xampp/htdocs/aplikacja2/templates/mainMenu.html.php",
-		"/C/xampp/htdocs/aplikacja/controller/login.php",
-		"/C/xampp/htdocs/aplikacja/model/login.php",
-		"/C/xampp/htdocs/aplikacja/templates/css/main.css",
 		"/C/xampp/htdocs/aplikacja/templates/head.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/footer.html.php",
 		"/C/xampp/htdocs/aplikacja/templates/navbar.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/header.html.php",
 		"/C/xampp/htdocs/aplikacja/templates/test.html.php",
 		"/C/xampp/htdocs/sticky/index.html",
 		"/C/xampp/htdocs/sticky/style.css",
 		"/C/Users/Qki/Downloads/76-Bootstrap-4-Menu-Starter-File/76 - Bootstrap 4 Menu Starter File/Bootstrap 4 Navigation Menu/index.html",
-		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.html.php",
 		"/C/xampp/htdocs/aplikacja2/templates/head.html.php",
 		"/C/xampp/htdocs/aplikacja/nowe templatki/expense.html.php",
 		"/C/xampp/htdocs/aplikacja/nowe templatki/balanceSheet.html.php",
@@ -284,9 +411,7 @@
 		"/C/xampp/htdocs/aplikacja/controller/editCashFlow.php",
 		"/C/xampp/htdocs/aplikacja/view/addExpense.php",
 		"/C/xampp/htdocs/aplikacja/controller/deleteCashFlow.php",
-		"/C/xampp/htdocs/aplikacja/model/deleteCashFlow.php",
 		"/C/xampp/htdocs/aplikacja/classes/sessionMessage.php",
-		"/C/xampp/htdocs/aplikacja/model/model.php",
 		"/C/xampp/htdocs/artykuly/model/categories.php",
 		"/C/xampp/htdocs/artykuly/controller/categories.php",
 		"/C/xampp/htdocs/artykuly/index.php",
@@ -294,11 +419,9 @@
 		"/C/xampp/htdocs/artykuly/view/categories.php",
 		"/C/xampp/htdocs/budgetOOP2/balanceSheetLogic.php",
 		"/C/xampp/htdocs/aplikacja/config.php",
-		"/C/xampp/htdocs/aplikacja/config/config.php",
 		"/C/xampp/htdocs/budget/balanceSheet.php",
 		"/C/xampp/htdocs/aplikacja/templates/balanceSheet.php",
 		"/C/xampp/htdocs/budgetOOP/balanceSheet.php",
-		"/C/xampp/htdocs/aplikacja/controller/register.php",
 		"/C/xampp/htdocs/budget/config.php",
 		"/C/xampp/htdocs/budgetOOP/config.php",
 		"/C/xampp/htdocs/budgetOOP2/config.php",
@@ -308,41 +431,19 @@
 		"/C/xampp/htdocs/budgetOOP2/addExpenseLogic.php",
 		"/C/xampp/htdocs/budgetOOP2/addExpense.php",
 		"/C/xampp/htdocs/budgetOOP2/addIncome.php",
-		"/C/xampp/htdocs/aplikacja/model/register.php",
 		"/C/xampp/htdocs/budgetOOP2/addIncomeLogic.php",
 		"/C/xampp/htdocs/budgetOOP2/categoryLoader.php",
-		"/C/xampp/htdocs/aplikacja/view/login.php",
 		"/C/xampp/htdocs/budgetOOP2/loginLogic.php",
 		"/C/xampp/htdocs/aplikacja/view/register.php",
 		"/C/xampp/htdocs/aplikacja/templates/incomeForm.html.php",
 		"/C/xampp/htdocs/budgetOOP2/registerLogic.php",
 		"/C/xampp/htdocs/artykuly/model/model.php",
 		"/C/Users/Qki/AppData/Local/Temp/fz3temp-2/config 2.php",
-		"/C/xampp/htdocs/budgetOOP2/login.php",
-		"/C/xampp/htdocs/budgetOOP2/sessionMessage.php",
-		"/C/xampp/htdocs/budget2/config.php",
-		"/C/xampp/htdocs/budgetOOP2/mainMenu.php",
-		"/C/xampp/htdocs/aplikacja/templates/js/clock.js",
-		"/C/xampp/htdocs/aplikacja/controller/logout.php",
-		"/C/xampp/htdocs/budgetOOP2/connectionService.php",
-		"/C/xampp/htdocs/budgetOOP2/register.php",
-		"/C/xampp/htdocs/artykuly/templates/header.html.php",
-		"/C/xampp/htdocs/artykuly/templates/indexArticle.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/login.php",
-		"/C/xampp/htdocs/aplikacja/css/main.css",
-		"/C/xampp/htdocs/artykuly/templates/footer.html.php",
-		"/C/xampp/htdocs/artykuly/templates/addCategory.html.php",
-		"/C/xampp/htdocs/artykuly/templates/addArticle.html.php",
-		"/C/xampp/htdocs/artykuly/templates/oneArticle.html.php",
-		"/C/xampp/htdocs/aplikacja/templates/index.php",
-		"/C/xampp/htdocs/app/classes/Application.php",
-		"/C/xampp/htdocs/app/classes/ApplicationFront.php",
-		"/C/xampp/htdocs/artykuly/controller/controller.php",
-		"/C/xampp/htdocs/app/index.php"
+		"/C/xampp/htdocs/budgetOOP2/login.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -356,6 +457,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"form-message",
+			"del",
+			"getCategories",
+			"suggestedCategories",
+			"managesuggestedCategories",
+			"manage",
+			"manageCategory",
+			"fade",
+			"getCa",
+			"form",
+			"edit",
+			".on",
+			"on",
+			"fetch",
+			"getIncomeCategories",
+			"                        ",
+			"jquery",
+			"ajax",
+			"addB",
+			"offset",
 			"categories",
 			"border",
 			"register",
@@ -425,53 +546,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/css/main.css",
+					"file": "index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8342,
+						"buffer_size": 1724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								339,
-								339
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/balanceSheet.html.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4657,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								274,
-								274
+								1542,
+								1542
 							]
 						],
 						"settings":
@@ -480,7 +572,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 156.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "controller/settings.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
@@ -488,19 +609,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "view/showBalance.php",
+					"file": "view/settings.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1908,
+						"buffer_size": 1324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1335,
-								1335
+								160,
+								160
 							]
 						],
 						"settings":
@@ -509,7 +630,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 312.0,
+						"translation.y": 65.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -517,19 +638,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "templates/income.html.php",
+					"file": "model/settings.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2649,
+						"buffer_size": 5917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1032,
-								1062
+								753,
+								753
 							]
 						],
 						"settings":
@@ -538,49 +659,113 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "templates/balanceNavbar.html.php",
+					"file": "templates/js/settings.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4325,
+						"buffer_size": 11411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2116,
-								2129
+								2604,
+								2604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/settings.html.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 234.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "templates/header.html.php",
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/crud/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 200,
+						"buffer_size": 8506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4255,
+								4255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -593,42 +778,104 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "model/showBalance.php",
+					"buffer": 8,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5877,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								855,
-								855
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 234.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -649,18 +896,32 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.7,
 			1.0
 		]
 	},
@@ -715,25 +976,35 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"14":
+				"15":
 				{
 					"group": 0,
 					"index": 0
 				},
-				"18":
+				"16":
 				{
 					"group": 0,
 					"index": 1
 				},
-				"31":
-				{
-					"group": 0,
-					"index": 3
-				},
-				"34":
+				"17":
 				{
 					"group": 0,
 					"index": 2
+				},
+				"18":
+				{
+					"group": 1,
+					"index": 1
+				},
+				"19":
+				{
+					"group": 1,
+					"index": 2
+				},
+				"20":
+				{
+					"group": 1,
+					"index": 0
 				}
 			},
 			"restore_layout":
@@ -745,11 +1016,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.5,
 					1.0
 				],
 				"rows":

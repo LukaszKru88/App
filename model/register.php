@@ -50,7 +50,7 @@ class RegisterModel extends Model
 			throw new exception('Musisz potwierdzić akceptację regulaminu.');
 
 		//Sprawdzanie formularza CAPTCHA
-		$secret_key="6Lfjf2kUAAAAAHBDrdNHotcoERxpinyPVQeZYvNp";
+		$secret_key="6LdHL20UAAAAAHj4gFvHCzSR6tkFKjelgb2SEEUy";
 		$check=file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $_POST['g-recaptcha-response']);
 		
 		$recaptcha_response=json_decode($check);

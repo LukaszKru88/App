@@ -54,7 +54,7 @@ include "formNavbar.html.php";
 							</div>
 							
 							<div class="recaptcha">
-								<div class="g-recaptcha" data-sitekey="6Lfjf2kUAAAAAJRu4EpI66Q2Za_xbOIjAhtyqDQo"></div>
+								<div class="g-recaptcha" data-sitekey="6LdHL20UAAAAAHlSowYpX-OnUFTqQt5o7YbYQgg7"></div>
 							</div>
 						  	<div class="col-md-6 offset-md-3 indexMain text-center">
 								<button id="registerButton" class="btn btn-success" name="singlebutton"><i class="icon-user-plus"></i> Zarejestruj się</button>	

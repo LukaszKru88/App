@@ -20,7 +20,7 @@
               <a class="nav-link" href="?task=showBalance&action=index"><i class="icon-chart-pie"></i> Przeglądaj bilans</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icon-cog-alt"></i> Ustawienia</a>
+              <a class="nav-link" href="?task=settings&action=index"><i class="icon-cog-alt"></i> Ustawienia</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="templates/logout.php"><i class="icon-logout"></i> Wyloguj się</a>

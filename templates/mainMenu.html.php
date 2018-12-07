@@ -32,7 +32,7 @@ include "header.html.php";
 					<div class="col-sm-6 col-md-4 text-center"> 
 						<p class="mainMenuText">Tu wprowadzisz wszelkie zmiany!</p>
 						<label class="indexMain mainMenuIcon">
-							<a href="settings.php"><p><i class="icon-cog-alt"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Ustawienia</button></a>
+							<a href="?task=settings&action=index"><p><i class="icon-cog-alt"></i></p><button name="singlebutton" class="btn btn-info mainMenuButton">Ustawienia</button></a>
 					</label>
 					</div>
 

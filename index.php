@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-// if(isset($_SESSION['is_logged'])){
-// 	require 'templates/mainMenu.html.php';
-// }
-// else {
 	if (isset($_GET['task'])){
 		switch($_GET['task']){
 			case 'login':
@@ -60,6 +56,12 @@ session_start();
 					$ob->$action();
 					break;
 				}
+			case 'settings':
+				include 'controller/settings.php';
+				$ob = new SettingsController();
+				$action = $_GET['action'];
+				$ob->$action();
+				break;
 		}
 	} 
 	else {
@@ -68,4 +70,3 @@ session_start();
 		} else 
 			require "templates/indexMain.html.php";
 	}
-//}

@@ -54,7 +54,7 @@ include "mainNavbar.html.php";
 								</div>
 								<div class="row">
 								    <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3 text-center">
-											<button id="addButton" class="btn btn-info btn-block" name="add">Dodaj</button>
+											<button id="addButton" class="btn btn-info btn-block addButton" name="add">Dodaj</button>
 									</div>
 								</div>
 							</div>
@@ -65,7 +65,7 @@ include "mainNavbar.html.php";
 							<dic class="row">
 								<div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3 text-center">
 									<a href="index.php">
-										<button id="cancelButton" class="btn btn-success btn-block" name="cancel">Anuluj</button>
+										<button id="cancelButton" class="btn btn-success btn-block cancelButton" name="cancel">Anuluj</button>
 									</a>
 								</div>
 							</dic>

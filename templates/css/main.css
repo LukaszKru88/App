@@ -8,6 +8,20 @@ a, a:hover {
 	text-decoration: none;
 }
 
+.input-error {
+	color: red;
+}
+
+#success-message{
+	color: green;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 5px;
+	line-height: 150%;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
 .row {
 	margin: 0 !important;
 }
@@ -190,7 +204,7 @@ h3
 	padding: 10px;
 }
 
-#logButton, #registerButton, #addButton, #cancelButton
+#logButton, #registerButton, .addButton, .cancelButton, .editButton, .deleteButton
 {
 	margin-top: 15px;
 	padding: 10px;
@@ -530,7 +544,7 @@ h3
 		transition: all 1s;
 	}
 	
-	#registerButton, #addButton, #cancelButton, #logButton
+	#registerButton, .addButton, .cancelButton, #logButton, .editButton, .deleteButton
 	{
 		font-size: 12px;
 		transition: font-size 1s;
