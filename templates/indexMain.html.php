@@ -16,7 +16,7 @@ include "header.html.php";
 								- dodawać przychody i wydatki,<br>
 								- przeglądać bilans w czasie,<br>
 								- zarządzać kategoriami,<br>
-								- dodawać i edytować wpisy,<br>
+								- usuwać i edytować wpisy,<br>
 							A to wszytsko zupełnie za darmo!</p>
 						</div>
 					</section>

@@ -1,37 +1,5 @@
 $(document).ready(function() {
-    // $("form").submit(function(event) {
-    //     event.preventDefault();
-    //     var categoryType = $("#categoryType").val();
-    //     var newName = $("#categoryName").val();
-    //     var oldName = $(".manageCategory").val();
 
-    //     $.ajax({
-    //         url: 'index.php?task=settings$action=edit',
-    //         method: 'POST',
-    //         dataType: 'text',
-    //         data: {
-    //             categoryType: categoryType,
-    //             newName: newName,
-    //             oldName: oldName
-    //         }, success: function(response) {
-    //             alert("Sukces!");
-    //         }
-    //     });
-    // });
-
-            // $("#tableManager").on('hidden.bs.modal', function(){
-            //     $("#showContent").fadeOut();
-            //     $("#editContent").fadeIn();
-            //     $("#editRowID").val(0);
-            //     $("#shortDesc").val("");
-            //     $("#longDesc").val("");
-            //     $("#countryName").val("");
-            //     $(".modal-title").val("");
-            //     $("#closeBtn").fadeOut();
-            //     $("#manageBtn").attr('value', "Add New").attr('onclick', "manageData('addNew')").fadeIn();
-            // });
-
-    //getExistingData(0, 10);
 });
 
 function getCategories(task, action, categoryType) {

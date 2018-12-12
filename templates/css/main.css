@@ -12,6 +12,10 @@ a, a:hover {
 	color: red;
 }
 
+.col-sm-12 {
+	padding: 0 !important;
+}
+
 #success-message{
 	color: green;
 	text-transform: uppercase;
